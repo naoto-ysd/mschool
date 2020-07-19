@@ -1,24 +1,17 @@
-# README
+* データベース設計
+## users テーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|encrypted_password|string| null: false|
+|reset_password_token|string|
+|reset_password_sent_at|datetime|
+|remember_created_at|datetime|
+|nickname|string|null: false|
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## teachers テーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|instrument|string|null: false|
+|address|string|null: false|
