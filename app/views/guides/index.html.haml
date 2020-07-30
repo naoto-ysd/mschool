@@ -16,3 +16,5 @@
   .Select
     習いたい楽器を検索
   = form_with(model: course, url:"#", local: true) do |f|
+    = f.text_field
+    = f.submit
