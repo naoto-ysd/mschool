@@ -1,4 +1,4 @@
-%header
+%header.TopPageHeader
   - if user_signed_in?
     %div
       テストユーザー
@@ -10,10 +10,10 @@
       = link_to "ログイン", new_user_session_path
       = link_to "新規登録", new_user_registration_path
 
-.Main
-  オンライン音楽教室
+.GuidesMain
+  Mschoolはオンラインの音楽教室です。
 
-  .Select
+  .GuidesMain__Select
     習いたい楽器を検索
   - form_with model: @course, url:"#", local: true do |f|
     = f.text_field :category, autofocus: true, class: "CourseInputForm"
