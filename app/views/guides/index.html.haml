@@ -14,10 +14,10 @@
   Mschoolはオンラインの音楽教室です。
 
   = form_with url: "#", method: :GET, local: true do |f|
-    = f.text_field :OCR, class: "TextbookBox__Search__Form"
+    = f.text_field :instrument
     .TextbookBox__Search__Icon
-      = button_tag type: 'submit', class: "TextbookBox__Search__Icon__Image" do
-        = icon('fa', 'search', class: "TextbookBox__Search__Icon__Image__Glasses")
+      = button_tag type: 'submit' do
+        = icon('fa', 'search')
 
   .GuidesMain__Select
     習いたい楽器を検索
